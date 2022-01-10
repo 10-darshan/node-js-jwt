@@ -1,0 +1,106 @@
+// Regiser -
+POST http://localhost:9000/register
+content-type: application/json
+
+{
+    "username": "darshan",
+    "password": "dsr"
+}
+###
+GET http://localhost:9000/register
+###
+DELETE  http://localhost:9000/register
+###
+// Login -
+POST http://localhost:9000/login
+content-type: application/json
+
+{
+    "username": "darshan",
+    "password": "dsr"
+}
+###
+// Company -
+POST http://localhost:9000/company
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWRiOTJiZjdlYjFiOWFmYWEwYzVlZjMiLCJpYXQiOjE2NDE3ODAwNjQsImV4cCI6MTY0MTc4MDM2NH0.BsclxdfljGawRnS_5Qq9v5I8S9cZtTmbvfzc8PGobm4
+content-type: application/json
+
+{
+    "UUID":"c1002",
+    "name":"Himalayas Limited 2",
+    "CEO":"Karismatic Enigma 2",
+    "address": {
+        "district":"Himalayas",
+        "state":"Uttarakhand",
+        "country":"India",
+        "pinCode":263601
+    },
+    "inceptionDate":"2011-10-10"
+}
+###
+PATCH http://localhost:9000/company/61d9ad9869491d99eb8a1ee6
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWRiNmZmMTU4MDZjZDdmYmNkNWNmZWUiLCJpYXQiOjE2NDE3NzIzMTQsImV4cCI6MTY0MTc3MjYxNH0.ch08BGY74fDd4gCvI1GrK2f7XsWkipQkZAVRWcF9i1c
+content-type: application/json
+
+{
+    "UUID":"c1002",
+    "name":"Himalayas Limited 2",
+    "CEO":"Karismatic Enigma 2",
+    "address": {
+        "district":"Himalayas",
+        "state":"Uttarakhand",
+        "country":"India",
+        "pinCode":263601
+    },
+    "inceptionDate":"2017-05-18"
+}
+###
+DELETE  http://localhost:9000/company/61d9ad9869491d99eb8a1ee6
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWRiNmZmMTU4MDZjZDdmYmNkNWNmZWUiLCJpYXQiOjE2NDE3NzIzMTQsImV4cCI6MTY0MTc3MjYxNH0.ch08BGY74fDd4gCvI1GrK2f7XsWkipQkZAVRWcF9i1c
+###
+GET http://localhost:9000/company
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWRiNmZmMTU4MDZjZDdmYmNkNWNmZWUiLCJpYXQiOjE2NDE3NzY3OTcsImV4cCI6MTY0MTc3NzA5N30.r4WF8JDr2xDqwrcruBm_5L8suR2oGiiBve3_A5UV6Qc
+###
+GET http://localhost:9000/company?name=Himalayas Limited 2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWRiNmZmMTU4MDZjZDdmYmNkNWNmZWUiLCJpYXQiOjE2NDE3NzY3OTcsImV4cCI6MTY0MTc3NzA5N30.r4WF8JDr2xDqwrcruBm_5L8suR2oGiiBve3_A5UV6Qc
+###
+GET http://localhost:9000/company/61d9ad9869491d99eb8a1ee6
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWRiNmZmMTU4MDZjZDdmYmNkNWNmZWUiLCJpYXQiOjE2NDE3NzIzMTQsImV4cCI6MTY0MTc3MjYxNH0.ch08BGY74fDd4gCvI1GrK2f7XsWkipQkZAVRWcF9i1c
+###
+GET http://localhost:9000/company/team
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWRiOTJiZjdlYjFiOWFmYWEwYzVlZjMiLCJpYXQiOjE2NDE3ODAyOTcsImV4cCI6MTY0MTc4MDU5N30.TPPpwd4WTqbV7N_IXO4PFp6EDMGL-BhhKOAW-TSfcEM
+###
+// Team -
+POST http://localhost:9000/team/61db939b7eb1b9afaa0c5efc
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWRiOTJiZjdlYjFiOWFmYWEwYzVlZjMiLCJpYXQiOjE2NDE3ODAwNjQsImV4cCI6MTY0MTc4MDM2NH0.BsclxdfljGawRnS_5Qq9v5I8S9cZtTmbvfzc8PGobm4
+content-type: application/json
+
+{
+    "UUID":"t104",
+    "leadName":"Man Eater 4"
+}
+###
+PATCH http://localhost:9000/team/61d9ad9869491d99eb8a1ee6
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWRiNmZmMTU4MDZjZDdmYmNkNWNmZWUiLCJpYXQiOjE2NDE3NzIzMTQsImV4cCI6MTY0MTc3MjYxNH0.ch08BGY74fDd4gCvI1GrK2f7XsWkipQkZAVRWcF9i1c
+content-type: application/json
+
+{
+    "UUID":"t102",
+    "leadName":"Man Eater 2"
+}
+###
+DELETE  http://localhost:9000/team/61d9ad9869491d99eb8a1ee6
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWRiNmZmMTU4MDZjZDdmYmNkNWNmZWUiLCJpYXQiOjE2NDE3NzIzMTQsImV4cCI6MTY0MTc3MjYxNH0.ch08BGY74fDd4gCvI1GrK2f7XsWkipQkZAVRWcF9i1c
+###
+GET http://localhost:9000/team
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWRiNmZmMTU4MDZjZDdmYmNkNWNmZWUiLCJpYXQiOjE2NDE3NzY3OTcsImV4cCI6MTY0MTc3NzA5N30.r4WF8JDr2xDqwrcruBm_5L8suR2oGiiBve3_A5UV6Qc
+###
+GET http://localhost:9000/team/61d9ad9869491d99eb8a1ee6
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWRiNmZmMTU4MDZjZDdmYmNkNWNmZWUiLCJpYXQiOjE2NDE3NzIzMTQsImV4cCI6MTY0MTc3MjYxNH0.ch08BGY74fDd4gCvI1GrK2f7XsWkipQkZAVRWcF9i1c
+###
+// Delete Token from Database -
+GET http://localhost:9000/deleteToken
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWRiOTJiZjdlYjFiOWFmYWEwYzVlZjMiLCJpYXQiOjE2NDE3ODA4NzAsImV4cCI6MTY0MTc4MTQ3MH0.wwi9Jt09hKoSi57wCMMRUHdIjm5-BdgXCkUdNDEZ1U8
+###
+GET http://localhost:9000/
+###
