@@ -69,5 +69,5 @@ app.use('/team',auth ,teamRouter);
 
 
 app.listen(port,()=> {
-    console.log('server running on port 9000 ...');
+    console.log(`server running on port ${process.env.PORT} ...`);
 });
