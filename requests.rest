@@ -59,7 +59,7 @@ DELETE  http://localhost:9000/company/61d9ad9869491d99eb8a1ee6
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWRiNmZmMTU4MDZjZDdmYmNkNWNmZWUiLCJpYXQiOjE2NDE3NzIzMTQsImV4cCI6MTY0MTc3MjYxNH0.ch08BGY74fDd4gCvI1GrK2f7XsWkipQkZAVRWcF9i1c
 ###
 GET http://localhost:9000/company
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWRiNmZmMTU4MDZjZDdmYmNkNWNmZWUiLCJpYXQiOjE2NDE3NzY3OTcsImV4cCI6MTY0MTc3NzA5N30.r4WF8JDr2xDqwrcruBm_5L8suR2oGiiBve3_A5UV6Qc
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWRiOTJiZjdlYjFiOWFmYWEwYzVlZjMiLCJpYXQiOjE2NDE4OTMxNjAsImV4cCI6MTY0MTg5Mzc2MH0.UAw3Iht9Fa3mrYabT3ovp3M7kB214EwoTrCa8CFeQQs
 ###
 GET http://localhost:9000/company?name=Himalayas Limited 2
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWRiNmZmMTU4MDZjZDdmYmNkNWNmZWUiLCJpYXQiOjE2NDE3NzY3OTcsImV4cCI6MTY0MTc3NzA5N30.r4WF8JDr2xDqwrcruBm_5L8suR2oGiiBve3_A5UV6Qc
@@ -71,13 +71,13 @@ GET http://localhost:9000/company/team
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWRiOTJiZjdlYjFiOWFmYWEwYzVlZjMiLCJpYXQiOjE2NDE3ODAyOTcsImV4cCI6MTY0MTc4MDU5N30.TPPpwd4WTqbV7N_IXO4PFp6EDMGL-BhhKOAW-TSfcEM
 ###
 // Team -
-POST http://localhost:9000/team/61db939b7eb1b9afaa0c5efc
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWRiOTJiZjdlYjFiOWFmYWEwYzVlZjMiLCJpYXQiOjE2NDE3ODAwNjQsImV4cCI6MTY0MTc4MDM2NH0.BsclxdfljGawRnS_5Qq9v5I8S9cZtTmbvfzc8PGobm4
+POST http://localhost:9000/team/61db939b7eb1b9afaa0c5efss
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWRiOTJiZjdlYjFiOWFmYWEwYzVlZjMiLCJpYXQiOjE2NDE4OTMxNjAsImV4cCI6MTY0MTg5Mzc2MH0.UAw3Iht9Fa3mrYabT3ovp3M7kB214EwoTrCa8CFeQQs
 content-type: application/json
 
 {
-    "UUID":"t104",
-    "leadName":"Man Eater 4"
+    "UUID":"t106",
+    "leadName":"Man Eater 6"
 }
 ###
 PATCH http://localhost:9000/team/61d9ad9869491d99eb8a1ee6

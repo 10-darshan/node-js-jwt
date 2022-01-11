@@ -4,6 +4,7 @@ const res = require('express/lib/response');
 const router = express.Router();
 const mongoose = require('mongoose');
 let Team = mongoose.model('Team');
+let Company = mongoose.model('Company');
 
 // add a team -
 // router.post("/",async(req,res)=>{
@@ -19,6 +20,7 @@ let Team = mongoose.model('Team');
 // add a team with company _id in url -
 router.post("/:id",async(req,res)=>{
     try{
+        const company =await Company.findById(req.params.id);
         const team = new Team(req.body);
         team.companyID = req.params.id;
         res.status(201).send(await team.save());
