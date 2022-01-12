@@ -57,7 +57,7 @@ Create a .env file in the current directory with the following contents:
 
 ```sh
 $ vim .env
-SECRET_KEY= // secret key for jwt token. Will be send via mail.
+SECRET_KEY= // Secret key for jwt token. Should be a string atleast 32 characters in length.
 MONGO_USERNAME=  // Mongodb username. Will be send via mail.
 MONGO_PASSWORD= // Mongodb password. Will be send via mail.
 PORT=9000  // (Optional) Port on which node js server will run. Sever will run on port 9000 by default if no port provided.
